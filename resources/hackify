@@ -1,0 +1,8 @@
+#!/bin/bash
+FILES=$(find . -type f -name '*.hh')
+for f in $FILES
+do
+  echo "processing $f";
+  sudo hackificator $f;
+  # take action on each file.
+done
